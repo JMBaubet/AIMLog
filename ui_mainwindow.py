@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'ui_mainwindowpbRnso.ui'
+## Form generated from reading UI file 'ui_mainwindowyVYuWH.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.1
 ##
@@ -25,10 +25,45 @@ class Ui_MainWindow(object):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1440, 1024)
+        MainWindow.setStyleSheet(u"#versionLbl {\n"
+"    color : rgb(77, 149, 247);\n"
+"}\n"
+"\n"
+"#menu_vertical{\n"
+"  background-color : #161616;\n"
+"}\n"
+"\n"
+"#homeBtn {\n"
+"background-color: transparent;\n"
+"}\n"
+"\n"
+"#importCnxBtn {\n"
+"background-color: transparent;\n"
+"}\n"
+"\n"
+"#importEvtBtn {\n"
+"background-color: transparent;\n"
+"}\n"
+"\n"
+"#databaseBtn {\n"
+"background-color: transparent;\n"
+"}\n"
+"\n"
+"#settingBtn {\n"
+"background-color: transparent;\n"
+"}\n"
+"\n"
+"#footer {\n"
+"  background-color : #1b1b1b;\n"
+"\n"
+"}\n"
+"")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName(u"verticalLayout")
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.widget_2 = QWidget(self.centralwidget)
         self.widget_2.setObjectName(u"widget_2")
         sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Expanding)
@@ -38,44 +73,65 @@ class Ui_MainWindow(object):
         self.widget_2.setSizePolicy(sizePolicy)
         self.horizontalLayout_2 = QHBoxLayout(self.widget_2)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.menu_vertical = QWidget(self.widget_2)
         self.menu_vertical.setObjectName(u"menu_vertical")
         self.verticalLayout_2 = QVBoxLayout(self.menu_vertical)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.pushButton = QPushButton(self.menu_vertical)
-        self.pushButton.setObjectName(u"pushButton")
+        self.verticalLayout_2.setContentsMargins(0, 8, 0, 16)
+        self.homeBtn = QPushButton(self.menu_vertical)
+        self.homeBtn.setObjectName(u"homeBtn")
         sizePolicy1 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Minimum)
         sizePolicy1.setHorizontalStretch(0)
         sizePolicy1.setVerticalStretch(0)
-        sizePolicy1.setHeightForWidth(self.pushButton.sizePolicy().hasHeightForWidth())
-        self.pushButton.setSizePolicy(sizePolicy1)
-        self.pushButton.setMinimumSize(QSize(22, 0))
+        sizePolicy1.setHeightForWidth(self.homeBtn.sizePolicy().hasHeightForWidth())
+        self.homeBtn.setSizePolicy(sizePolicy1)
+        icon = QIcon()
+        icon.addFile(u":/icons/ressources/icons/home.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.homeBtn.setIcon(icon)
+        self.homeBtn.setIconSize(QSize(48, 48))
 
-        self.verticalLayout_2.addWidget(self.pushButton)
+        self.verticalLayout_2.addWidget(self.homeBtn)
 
-        self.pushButton_2 = QPushButton(self.menu_vertical)
-        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.importCnxBtn = QPushButton(self.menu_vertical)
+        self.importCnxBtn.setObjectName(u"importCnxBtn")
+        icon1 = QIcon()
+        icon1.addFile(u":/icons/ressources/icons/shuffle.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.importCnxBtn.setIcon(icon1)
+        self.importCnxBtn.setIconSize(QSize(48, 48))
 
-        self.verticalLayout_2.addWidget(self.pushButton_2)
+        self.verticalLayout_2.addWidget(self.importCnxBtn)
 
-        self.pushButton_3 = QPushButton(self.menu_vertical)
-        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.importEvtBtn = QPushButton(self.menu_vertical)
+        self.importEvtBtn.setObjectName(u"importEvtBtn")
+        icon2 = QIcon()
+        icon2.addFile(u":/icons/ressources/icons/activity.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.importEvtBtn.setIcon(icon2)
+        self.importEvtBtn.setIconSize(QSize(48, 48))
 
-        self.verticalLayout_2.addWidget(self.pushButton_3)
+        self.verticalLayout_2.addWidget(self.importEvtBtn)
 
-        self.pushButton_4 = QPushButton(self.menu_vertical)
-        self.pushButton_4.setObjectName(u"pushButton_4")
+        self.databaseBtn = QPushButton(self.menu_vertical)
+        self.databaseBtn.setObjectName(u"databaseBtn")
+        icon3 = QIcon()
+        icon3.addFile(u":/icons/ressources/icons/database.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.databaseBtn.setIcon(icon3)
+        self.databaseBtn.setIconSize(QSize(48, 48))
 
-        self.verticalLayout_2.addWidget(self.pushButton_4)
+        self.verticalLayout_2.addWidget(self.databaseBtn)
 
         self.verticalSpacer = QSpacerItem(20, 737, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
         self.verticalLayout_2.addItem(self.verticalSpacer)
 
-        self.pushButton_5 = QPushButton(self.menu_vertical)
-        self.pushButton_5.setObjectName(u"pushButton_5")
+        self.settingBtn = QPushButton(self.menu_vertical)
+        self.settingBtn.setObjectName(u"settingBtn")
+        icon4 = QIcon()
+        icon4.addFile(u":/icons/ressources/icons/settings.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.settingBtn.setIcon(icon4)
+        self.settingBtn.setIconSize(QSize(48, 48))
 
-        self.verticalLayout_2.addWidget(self.pushButton_5)
+        self.verticalLayout_2.addWidget(self.settingBtn)
 
 
         self.horizontalLayout_2.addWidget(self.menu_vertical)
@@ -89,32 +145,32 @@ class Ui_MainWindow(object):
         self.widget_main.setSizePolicy(sizePolicy2)
         self.verticalLayout_3 = QVBoxLayout(self.widget_main)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.label_4 = QLabel(self.widget_main)
-        self.label_4.setObjectName(u"label_4")
-        font = QFont()
-        font.setPointSize(18)
-        self.label_4.setFont(font)
-        self.label_4.setAlignment(Qt.AlignCenter)
-
-        self.verticalLayout_3.addWidget(self.label_4)
-
+        self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.stackedWidget = QStackedWidget(self.widget_main)
         self.stackedWidget.setObjectName(u"stackedWidget")
         self.page_01_analyse = QWidget()
         self.page_01_analyse.setObjectName(u"page_01_analyse")
+        self.verticalLayout_4 = QVBoxLayout(self.page_01_analyse)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.label = QLabel(self.page_01_analyse)
+        self.label.setObjectName(u"label")
+        sizePolicy2.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
+        self.label.setSizePolicy(sizePolicy2)
+        self.label.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_4.addWidget(self.label)
+
+        self.widget = QWidget(self.page_01_analyse)
+        self.widget.setObjectName(u"widget")
+        sizePolicy3 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        sizePolicy3.setHorizontalStretch(0)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.widget.sizePolicy().hasHeightForWidth())
+        self.widget.setSizePolicy(sizePolicy3)
+
+        self.verticalLayout_4.addWidget(self.widget)
+
         self.stackedWidget.addWidget(self.page_01_analyse)
-        self.page_03_import_event = QWidget()
-        self.page_03_import_event.setObjectName(u"page_03_import_event")
-        self.stackedWidget.addWidget(self.page_03_import_event)
-        self.page_04_database = QWidget()
-        self.page_04_database.setObjectName(u"page_04_database")
-        self.stackedWidget.addWidget(self.page_04_database)
-        self.page_99_preferences = QWidget()
-        self.page_99_preferences.setObjectName(u"page_99_preferences")
-        self.stackedWidget.addWidget(self.page_99_preferences)
-        self.page_02_import_connexion = QWidget()
-        self.page_02_import_connexion.setObjectName(u"page_02_import_connexion")
-        self.stackedWidget.addWidget(self.page_02_import_connexion)
 
         self.verticalLayout_3.addWidget(self.stackedWidget)
 
@@ -124,51 +180,79 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.widget_2)
 
-        self._footer = QWidget(self.centralwidget)
-        self._footer.setObjectName(u"_footer")
-        self.horizontalLayout = QHBoxLayout(self._footer)
-        self.horizontalLayout.setSpacing(8)
+        self.footer = QWidget(self.centralwidget)
+        self.footer.setObjectName(u"footer")
+        self.horizontalLayout = QHBoxLayout(self.footer)
+        self.horizontalLayout.setSpacing(24)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.horizontalLayout.setContentsMargins(20, 0, 0, 0)
-        self.label_3 = QLabel(self._footer)
-        self.label_3.setObjectName(u"label_3")
-        self.label_3.setPixmap(QPixmap(u":/icons/icons/32px-DGAC_DSNA.png"))
+        self.horizontalLayout.setContentsMargins(20, 8, 12, 8)
+        self.logo_dsna = QLabel(self.footer)
+        self.logo_dsna.setObjectName(u"logo_dsna")
+        self.logo_dsna.setEnabled(True)
+        sizePolicy4 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy4.setHorizontalStretch(5)
+        sizePolicy4.setVerticalStretch(0)
+        sizePolicy4.setHeightForWidth(self.logo_dsna.sizePolicy().hasHeightForWidth())
+        self.logo_dsna.setSizePolicy(sizePolicy4)
+        self.logo_dsna.setMaximumSize(QSize(24, 24))
+        self.logo_dsna.setPixmap(QPixmap(u":/icons/ressources/icons/120px-DGAC_DSNA.svg.png"))
+        self.logo_dsna.setScaledContents(True)
+        self.logo_dsna.setWordWrap(False)
 
-        self.horizontalLayout.addWidget(self.label_3)
+        self.horizontalLayout.addWidget(self.logo_dsna)
 
-        self.label_2 = QLabel(self._footer)
-        self.label_2.setObjectName(u"label_2")
-        sizePolicy2.setHeightForWidth(self.label_2.sizePolicy().hasHeightForWidth())
-        self.label_2.setSizePolicy(sizePolicy2)
+        self.MessageLbl = QLabel(self.footer)
+        self.MessageLbl.setObjectName(u"MessageLbl")
+        sizePolicy2.setHeightForWidth(self.MessageLbl.sizePolicy().hasHeightForWidth())
+        self.MessageLbl.setSizePolicy(sizePolicy2)
 
-        self.horizontalLayout.addWidget(self.label_2)
+        self.horizontalLayout.addWidget(self.MessageLbl)
 
-        self.label = QLabel(self._footer)
-        self.label.setObjectName(u"label")
-        self.label.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.versionLbl = QLabel(self.footer)
+        self.versionLbl.setObjectName(u"versionLbl")
+        font = QFont()
+        font.setFamilies([u"Helvetica Neue"])
+        font.setPointSize(14)
+        self.versionLbl.setFont(font)
+        self.versionLbl.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
 
-        self.horizontalLayout.addWidget(self.label)
+        self.horizontalLayout.addWidget(self.versionLbl)
 
 
-        self.verticalLayout.addWidget(self._footer)
+        self.verticalLayout.addWidget(self.footer)
 
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
+
+        self.stackedWidget.setCurrentIndex(0)
+
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Base de donn\u00e9e : ATM Domaine, du 19 oct. 2022 au 14 nov. 2022", None))
-        self.label_3.setText("")
-        self.label_2.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"Version : X.Y.Z", None))
+#if QT_CONFIG(tooltip)
+        self.homeBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Home", None))
+#endif // QT_CONFIG(tooltip)
+        self.homeBtn.setText("")
+        self.importCnxBtn.setText("")
+        self.importEvtBtn.setText("")
+#if QT_CONFIG(tooltip)
+        self.databaseBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Gestion de la base de donn\u00e9e...", None))
+#endif // QT_CONFIG(tooltip)
+        self.databaseBtn.setText("")
+        self.settingBtn.setText("")
+        self.label.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+#if QT_CONFIG(tooltip)
+        self.logo_dsna.setToolTip(QCoreApplication.translate("MainWindow", u"\u00a9 2023 SNA-RP/CDG", None))
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(statustip)
+        self.logo_dsna.setStatusTip("")
+#endif // QT_CONFIG(statustip)
+        self.logo_dsna.setText("")
+        self.MessageLbl.setText(QCoreApplication.translate("MainWindow", u"Message", None))
+        self.versionLbl.setText(QCoreApplication.translate("MainWindow", u"Verion X.Y.Z ", None))
     # retranslateUi
 
