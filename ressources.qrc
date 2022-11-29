@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="icons">
+    <file>ressources/icons/maximize.svg</file>
+    <file>ressources/icons/x-square.svg</file>
     <file>ressources/icons/settings.svg</file>
     <file>ressources/icons/shuffle.svg</file>
     <file>ressources/icons/database.svg</file>
