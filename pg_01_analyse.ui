@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>page_home</class>
- <widget class="QWidget" name="page_home">
+ <class>page_analyse</class>
+ <widget class="QWidget" name="page_analyse">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -14,28 +14,63 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(32, 32, 32);
-color: #ffffff;
+   <string notr="true">
+
+#entete {
+    background-color: #202020; 
+
+}
+
+#selection_barre {
+    background-color: #202020; 
+}
+
+
+#page_home {
+    background-color: #000; 
+    color: #ffffff;
+}
 </string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
    <item>
-    <widget class="QLabel" name="label">
-     <property name="font">
-      <font>
-       <pointsize>15</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Base de données exploitée : Damine_ATM  du 12 Oct.2022 au 23 nov. 2022</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
+    <widget class="QWidget" name="entete" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="enteteLbl">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Base de données exploitée : Damine_ATM  du 12 Oct.2022 au 23 nov. 2022</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </item>
    <item>
-    <widget class="QWidget" name="widget_2" native="true">
+    <widget class="QWidget" name="selection_barre" native="true">
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
        <widget class="QLabel" name="label_2">
@@ -51,7 +86,7 @@ color: #ffffff;
        </widget>
       </item>
       <item>
-       <widget class="QComboBox" name="comboBox"/>
+       <widget class="QComboBox" name="siteCbx"/>
       </item>
       <item>
        <widget class="QLabel" name="label_3">
@@ -61,7 +96,7 @@ color: #ffffff;
        </widget>
       </item>
       <item>
-       <widget class="QComboBox" name="comboBox_2"/>
+       <widget class="QComboBox" name="positionCbx"/>
       </item>
       <item>
        <widget class="QLabel" name="label_4">
@@ -116,13 +151,33 @@ color: #ffffff;
       <item>
        <widget class="QLabel" name="label_5">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
         <property name="text">
          <string>min.après</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="visualiserBtn">
+        <property name="text">
+         <string>Visualiser</string>
         </property>
        </widget>
       </item>

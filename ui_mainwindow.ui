@@ -15,7 +15,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">#titre_application {
-background-color: rgb(22, 22, 22);
+background-color: #161616;;
 }
 
 #titreLbl {
@@ -156,6 +156,9 @@ background-color: transparent;
           </item>
           <item>
            <widget class="QPushButton" name="importCnxBtn">
+            <property name="toolTip">
+             <string>Importation des log de connexion</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -173,6 +176,9 @@ background-color: transparent;
           </item>
           <item>
            <widget class="QPushButton" name="importEvtBtn">
+            <property name="toolTip">
+             <string>Importation des log évènements</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -410,7 +416,7 @@ background-color: transparent;
              <bool>false</bool>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: #000;</string>
+             <string notr="true"/>
             </property>
             <property name="currentIndex">
              <number>-1</number>

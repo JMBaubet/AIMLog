@@ -5,9 +5,10 @@ from PySide6.QtCore import Slot
 from ui_mainwindow import Ui_MainWindow
 
 # importation des pages su stacked widget
-from ui_pg_01_analyse import Ui_page_home
+from ui_pg_01_analyse import Ui_page_analyse
 from ui_pg_02_cnxlog import Ui_page_connexion_log
 
+from pg_01_analyse import exec_page_home
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -20,13 +21,15 @@ class MainWindow(QMainWindow):
 
         # Ajout des pages dans le stacked widget
         # On instencie la page home (analyse)
-        self.page_home = Ui_page_home()
+        self.page_analyse = Ui_page_analyse()
         # Initialisation de la page (Sinon rien ne s'affiche...)
-        self.page_home.setupUi(self.page_home)
+        self.page_analyse.setupUi(self.page_analyse)
         # Ajout de la page dans le stacked widget.
-        self.ui.stackedWidget.addWidget(self.page_home)
+        self.ui.stackedWidget.addWidget(self.page_analyse)
         # Au lancement on affiche la page home
         self.ui.stackedWidget.setCurrentIndex(0)
+
+        exec_page_home(self.page_analyse)
 
         # On instencie la page connexion_log
         self.page_connexion = Ui_page_connexion_log()
@@ -38,7 +41,7 @@ class MainWindow(QMainWindow):
         self.ui.closeBtn.clicked.connect(self.exit)
         # Traitement des évènements pour les boutons du menu vertical
         # self.ui.homeBtn.clicked.connect(self.affiche_home)
-        self.ui.homeBtn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.page_home))
+        self.ui.homeBtn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.page_analyse))
         self.ui.importCnxBtn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.page_connexion))
 
     @Slot()

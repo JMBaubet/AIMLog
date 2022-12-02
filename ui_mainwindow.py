@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'ui_mainwindowsgyMxg.ui'
+## Form generated from reading UI file 'ui_mainwindowyGfFvJ.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.1
 ##
@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1440, 1024)
         MainWindow.setStyleSheet(u"#titre_application {\n"
-"background-color: rgb(22, 22, 22);\n"
+"background-color: #161616;;\n"
 "}\n"
 "\n"
 "#titreLbl {\n"
@@ -229,7 +229,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.stackedWidget.sizePolicy().hasHeightForWidth())
         self.stackedWidget.setSizePolicy(sizePolicy)
         self.stackedWidget.setAutoFillBackground(False)
-        self.stackedWidget.setStyleSheet(u"background-color: #000;")
+        self.stackedWidget.setStyleSheet(u"")
 
         self.verticalLayout_3.addWidget(self.stackedWidget)
 
@@ -298,7 +298,13 @@ class Ui_MainWindow(object):
         self.homeBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Home", None))
 #endif // QT_CONFIG(tooltip)
         self.homeBtn.setText("")
+#if QT_CONFIG(tooltip)
+        self.importCnxBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Importation des log de connexion", None))
+#endif // QT_CONFIG(tooltip)
         self.importCnxBtn.setText("")
+#if QT_CONFIG(tooltip)
+        self.importEvtBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Importation des log \u00e9v\u00e8nements", None))
+#endif // QT_CONFIG(tooltip)
         self.importEvtBtn.setText("")
 #if QT_CONFIG(tooltip)
         self.databaseBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Gestion de la base de donn\u00e9e...", None))
