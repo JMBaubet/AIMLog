@@ -1,0 +1,52 @@
+#titre_application {
+background-color: #161616;
+}
+
+#titreLbl {
+	color: rgb(255, 255, 255);
+}
+
+#window_sizeBtn {
+    background-color: transparent;
+}
+
+#closeBtn {
+    background-color: transparent;
+}
+
+#menu_vertical {
+  background-color : #161616;
+}
+
+#homeBtn {
+background-color: transparent;
+}
+
+#importCnxBtn {
+background-color: transparent;
+}
+
+#importEvtBtn {
+background-color: transparent;
+}
+
+#databaseBtn {
+background-color: transparent;
+}
+
+#settingBtn {
+background-color: transparent;
+}
+
+#footer {
+  background-color : #1b1b1b;
+
+}
+
+#versionLbl {
+    color : rgb(77, 149, 247);
+}
+
+#messageLbl {
+    color: rgb(255, 255, 255);
+}

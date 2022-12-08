@@ -10,4 +10,7 @@
     <file>ressources/icons/120px-DGAC_DSNA.svg.png</file>
     <file>ressources/icons/32px-DGAC_DSNA.png</file>
   </qresource>
+  <qresource prefix="qss">
+    <file>ressources/main.qss</file>
+  </qresource>
 </RCC>

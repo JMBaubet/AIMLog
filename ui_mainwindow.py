@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'ui_mainwindowyGfFvJ.ui'
+## Form generated from reading UI file 'ui_mainwindowwBINvG.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.1
 ##
@@ -25,8 +25,9 @@ class Ui_MainWindow(object):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1440, 1024)
-        MainWindow.setStyleSheet(u"#titre_application {\n"
-"background-color: #161616;;\n"
+        MainWindow.setStyleSheet(u"\n"
+"#titre_application {\n"
+"background-color: #161616;\n"
 "}\n"
 "\n"
 "#titreLbl {\n"
@@ -41,7 +42,7 @@ class Ui_MainWindow(object):
 "    background-color: transparent;\n"
 "}\n"
 "\n"
-"\n"
+"#window_sizeBtn:hover, #closeBtn:hover {background-color: #323232;}\n"
 "\n"
 "#menu_vertical {\n"
 "  background-color : #161616;\n"
@@ -50,6 +51,7 @@ class Ui_MainWindow(object):
 "#homeBtn {\n"
 "background-color: transparent;\n"
 "}\n"
+"#homeBtn:hover, #importCnxBtn:hover, #importEvtBtn:hover, #databaseBtn:hover, #settingBtn:hover { background-color: #323232}\n"
 "\n"
 "#importCnxBtn {\n"
 "background-color: transparent;\n"
@@ -77,7 +79,8 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "#messageLbl {\n"
-"    color: rgb(255, 255, 255);\n"
+"    color: rgb(2"
+                        "55, 255, 255);\n"
 "}")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")

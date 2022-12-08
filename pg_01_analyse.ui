@@ -14,22 +14,23 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">
+   <string notr="true">#page_analyse {
+    background-color: #000; 
+    color:  #ffffff;
+}
+
 
 #entete {
     background-color: #202020; 
-
 }
+
+#enteteLbl {color: rgb(255, 255, 255);}
 
 #selection_barre {
     background-color: #202020; 
 }
 
-
-#page_home {
-    background-color: #000; 
-    color: #ffffff;
-}
+QLabel#selection_barre {color: rgb(255, 255, 255); }
 </string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">

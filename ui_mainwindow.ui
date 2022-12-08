@@ -14,8 +14,9 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">#titre_application {
-background-color: #161616;;
+   <string notr="true">
+#titre_application {
+background-color: #161616;
 }
 
 #titreLbl {
@@ -30,7 +31,7 @@ background-color: #161616;;
     background-color: transparent;
 }
 
-
+#window_sizeBtn:hover, #closeBtn:hover {background-color: #323232;}
 
 #menu_vertical {
   background-color : #161616;
@@ -39,6 +40,7 @@ background-color: #161616;;
 #homeBtn {
 background-color: transparent;
 }
+#homeBtn:hover, #importCnxBtn:hover, #importEvtBtn:hover, #databaseBtn:hover, #settingBtn:hover { background-color: #323232}
 
 #importCnxBtn {
 background-color: transparent;
@@ -143,7 +145,7 @@ background-color: transparent;
              <string/>
             </property>
             <property name="icon">
-             <iconset resource="ressources.qrc">
+             <iconset>
               <normaloff>:/icons/ressources/icons/home.svg</normaloff>:/icons/ressources/icons/home.svg</iconset>
             </property>
             <property name="iconSize">
@@ -163,7 +165,7 @@ background-color: transparent;
              <string/>
             </property>
             <property name="icon">
-             <iconset resource="ressources.qrc">
+             <iconset>
               <normaloff>:/icons/ressources/icons/shuffle.svg</normaloff>:/icons/ressources/icons/shuffle.svg</iconset>
             </property>
             <property name="iconSize">
@@ -183,7 +185,7 @@ background-color: transparent;
              <string/>
             </property>
             <property name="icon">
-             <iconset resource="ressources.qrc">
+             <iconset>
               <normaloff>:/icons/ressources/icons/activity.svg</normaloff>:/icons/ressources/icons/activity.svg</iconset>
             </property>
             <property name="iconSize">
@@ -203,7 +205,7 @@ background-color: transparent;
              <string/>
             </property>
             <property name="icon">
-             <iconset resource="ressources.qrc">
+             <iconset>
               <normaloff>:/icons/ressources/icons/database.svg</normaloff>:/icons/ressources/icons/database.svg</iconset>
             </property>
             <property name="iconSize">
@@ -239,7 +241,7 @@ background-color: transparent;
              <string/>
             </property>
             <property name="icon">
-             <iconset resource="ressources.qrc">
+             <iconset>
               <normaloff>:/icons/ressources/icons/settings.svg</normaloff>:/icons/ressources/icons/settings.svg</iconset>
             </property>
             <property name="iconSize">
@@ -358,7 +360,7 @@ background-color: transparent;
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="ressources.qrc">
+                <iconset>
                  <normaloff>:/icons/ressources/icons/maximize.svg</normaloff>:/icons/ressources/icons/maximize.svg</iconset>
                </property>
                <property name="iconSize">
@@ -390,7 +392,7 @@ background-color: transparent;
                 <string/>
                </property>
                <property name="icon">
-                <iconset resource="ressources.qrc">
+                <iconset>
                  <normaloff>:/icons/ressources/icons/x-square.svg</normaloff>:/icons/ressources/icons/x-square.svg</iconset>
                </property>
                <property name="iconSize">
@@ -486,7 +488,7 @@ background-color: transparent;
           <string comment="eet"/>
          </property>
          <property name="pixmap">
-          <pixmap resource="ressources.qrc">:/icons/ressources/icons/120px-DGAC_DSNA.svg.png</pixmap>
+          <pixmap>:/icons/ressources/icons/120px-DGAC_DSNA.svg.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
